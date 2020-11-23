@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <div th:replace="fragments/header :: head-styles"></div>
+</head>
+<body>
+
+    <!----- Navigation bar ----->
+
+    <div th:replace="fragments/navbar :: navbar"></div>
+
+    <!----- Jumbotron ----->
+    <div class="jumbotron">
+        <div class="container">
+            <img src="/img/Logo.png" class="col-9 col-sm-4 img-fluid jumbotronLogo" alt="">
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+    <!----- Callender ----->
+
+    <!----- Facebook Feed ----->
+
+    <div class="feed">
+        <iframe title="" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faurorairport%2F&amp;tabs=timeline&amp;width=370&amp;height=680&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId" 
+        width="370" height="680" style="border:none;overflow:hidden" 
+        scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+    </div>
+
+    <!----- Footer ----->
+
+    <div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>

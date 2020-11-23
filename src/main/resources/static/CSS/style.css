@@ -1,0 +1,38 @@
+ body {
+     background-color: #007ab3;
+ }
+
+ /* Navigation Bar */
+ .navbar {
+     background-color:rgba(128, 128, 128, 0.528);
+    
+ }
+ 
+ .logo {
+    width: 100px;
+}
+
+/* Jumbotron */
+
+.jumbotron {
+    background-image: url("/img/headerBackground.jpg");
+    background-size: cover;
+}
+
+.jumbotron .container {
+    text-align: center;
+}
+
+.jumbotronLogo {
+    padding-top: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+.lead{
+    padding-top: 30px;
+}
+
+.footer{
+    background-color:  #007ab3;
+}
