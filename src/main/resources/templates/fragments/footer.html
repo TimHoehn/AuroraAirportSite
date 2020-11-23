@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Footer</title>
     <div th:replace="fragments/header :: head-styles"></div>
@@ -21,7 +21,7 @@
           <!-- Content -->
           <img src="/img/footerLogo.png" class="img-responsive footerLogo" alt="">
           <a class="fb-ic">
-            <i class="fab fa-facebook-f white-text mr-4"> </i>
+            <!-- <i class="fab fa-facebook-f white-text mr-4"> </i> -->
           </a>
   
         </div>
@@ -33,9 +33,9 @@
         <div class="col-md-2 mx-auto">
   
           <!-- Links -->
-          <h5 class="text-uppercase">Helpful Links</h5>
+          <h5 class="text-uppercase footTitle">Helpful Links</h5>
   
-          <ul class="list-unstyled">
+          <ul class="list-unstyled footList">
             <li>
               <a href="#!">Locate Us</a>
             </li>
@@ -57,9 +57,9 @@
         <div class="col-md-2 mx-auto">
   
           <!-- Links -->
-          <h5 class="text-uppercase">Using This Site</h5>
+          <h5 class="text-uppercase footTitle">Using This Site</h5>
   
-          <ul class="list-unstyled">
+          <ul class="list-unstyled footList">
             <li>
               <a href="#!">Home</a>
             </li>
@@ -87,7 +87,7 @@
               <div class="col-md-2 mx-auto">
 
         <!-- Links -->
-        <h5 class="text-uppercase font-weight-bold">Contact</h5>
+        <h5 class="text-uppercase font-weight-bold footTitle">Contact</h5>
         <p>
           <i class="fas fa-map-marker-alt"></i> Aurora Municipal Airport 
           <br> Veterans Memorial Parkway

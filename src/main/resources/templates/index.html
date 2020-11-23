@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
 <head>
     <title>Home Page</title>
     <div th:replace="fragments/header :: head-styles"></div>
 </head>
+
 <body>
 
     <!----- Navigation bar ----->
@@ -17,14 +19,25 @@
             <p class="lead"></p>
         </div>
     </div>
-    <!----- Callender ----->
 
-    <!----- Facebook Feed ----->
 
-    <div class="feed">
-        <iframe title="" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faurorairport%2F&amp;tabs=timeline&amp;width=370&amp;height=680&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId" 
-        width="370" height="680" style="border:none;overflow:hidden" 
-        scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+    <div class="container-fluid">
+        <div class="row">
+            <!----- Calendar ----->
+            <div class="col-xl-8 mx-auto calendar">
+                <iframe class=" calendarFrame"
+                    src="https://calendar.google.com/calendar/embed?src=1d9bumh5ui8sq4t2lou7emofqc%40group.calendar.google.com&ctz=America%2FChicago"
+                    style="border: 0" width="900" height="680" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <!----- Facebook Feed ----->
+
+            <div class="col-xl-4 mx-auto feed">
+                <iframe title=""
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Faurorairport%2F&amp;tabs=timeline&amp;width=370&amp;height=680&amp;small_header=true&amp;adapt_container_width=false&amp;hide_cover=false&amp;show_facepile=false&amp;appId"
+                    width="370" height="680" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowtransparency="true"></iframe>
+            </div>
+        </div>
     </div>
 
     <!----- Footer ----->
@@ -32,4 +45,5 @@
     <div th:replace="fragments/footer :: footer"></div>
 
 </body>
+
 </html>

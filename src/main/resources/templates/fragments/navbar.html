@@ -26,7 +26,7 @@
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Airport Information
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <div class="dropdown-menu dropdownMenu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">Why Aurora Aurport</a>
                     <a class="dropdown-item" href="#">Partners</a>
                     <a class="dropdown-item" href="#">Tenants</a>
@@ -46,7 +46,7 @@
                   </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Inbound / Outbound</a>
+                  <a class="nav-link" th:href="inboundOutbound.html">Inbound / Outbound</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Contact Us</a>
@@ -56,16 +56,15 @@
               <!----- SearchBar ----->
               <div class="boxContainer">
 
-                <form class="form-inline my-2 my-lg-0">
+                <!-- <form class="form-inline my-2 my-lg-0"> -->
 
                   <table class="elementsContainer">
 
                     <tr>
 
                       <td>
-                        <input class="search" type="text" placeholder="Search" >
+                        <input class="search" type="text" placeholder="Search">
                       </td>
-
                       <td>
                         <a href="#"><i class="fas fa-search"></i></a>
                       </td>
@@ -74,13 +73,13 @@
 
                   </table>
 
-                </form>
+                <!-- </form> -->
 
               </div>
 
               <!----- Login ----->
 
-              <button class="btn btn-outline-success my-2 my-sm-0 Login" type="submit">Login</i></button>
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Login</i></button>
             
             </div>
           
